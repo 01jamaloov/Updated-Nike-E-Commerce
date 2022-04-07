@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection{
+	background: var(--first-color-alt);
+	color: #fff;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: inherit;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

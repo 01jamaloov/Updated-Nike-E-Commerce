@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  padding: 70px 0;
+  line-height: 20px;
+	background-image: var(--header-bg);
+  &_title {
+    font-size: calc(var(--heading-font-size) - 0.4rem);
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
+  &_list {
+		padding: 0;
+  }
+	&_item > a {
+		color: var(--text-color);
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: var(--tiny-font-size);
+		&:hover{
+			color: var(--first-color-alt);
+		}
+	}
+	&_item i {
+		margin-right: 5px;
+	}
+	&_social{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	&_icon{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-top: 20px;
+		background-color: var(--first-color);
+		color: #fff;
+		font-size: calc(var(--heading-font-size) - 0.5rem);
+		display: grid;
+		place-items: center;
+		transition: 0.3s;
+		&:hover{
+			background-color: var(--first-color-alt);
+		}
+	}
+}

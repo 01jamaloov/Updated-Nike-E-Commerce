@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+.section {
+  padding: 1.5rem 0 2rem;
+
+  &_title {
+    font-size: var(--heading-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin: 5rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+		letter-spacing: 2px;
+
+    &::before {
+			position: absolute;
+			content: "";
+			bottom: -10px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: red;
+			width: 100px;
+			height: 1px;
+    }
+  }
+}
+
+.particles-js{
+	width: 100%;
+	margin: 0;
+}

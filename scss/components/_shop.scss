@@ -1,0 +1,51 @@
+.shop {
+	&_wrapper{
+		row-gap: 100px;
+	}
+	&_image {
+		cursor: pointer;
+	}
+	&_btn {
+		background: var(--first-color);
+		width: 100%;
+		margin: 10px 0;
+		padding: 15px 0;
+		text-decoration: none;
+		color: #fff;
+		transition: 0.3s;
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+		font-weight: 400;
+		font-size: var(--normal-font-size);
+		border: none;
+	}
+	&_btn:hover {
+		background: var(--first-color-alt);
+		color: #fff;
+		text-decoration: none;
+	}
+	&_text {
+		font-size: var(--tiny-font-size);
+		color: var(--text-color);
+		margin: 0;
+	}
+	&_info {
+		font-weight: 500;
+		font-size: calc(var(--normal-font-size) - 0.2rem);
+		color: var(--text-color);
+		margin-bottom: 15px;
+	}
+	&_price {
+		font-size: calc(var(--normal-font-size) + 0.3rem);
+		font-weight: 400;
+		color:  var(--title-color);
+	}
+}
+
+
+
+
+
+
+

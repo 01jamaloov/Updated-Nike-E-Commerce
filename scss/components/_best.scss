@@ -1,0 +1,22 @@
+.best {
+  &_image {
+    cursor: pointer;
+  }
+  &_content {
+    position: relative;
+    margin: -40px auto 40px;
+    z-index: 2;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid lightgray;
+    height: auto;
+    text-transform: uppercase;
+    color: #444;
+    width: 83%;
+    padding: 15px 0;
+  }
+  &_title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,75 @@
+@media screen and (max-width: 992px) {
+  .t_shirts {
+    grid-template-columns: repeat(1, 1fr);
+    &_wrapper {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news_wrapper {
+    padding: 20px;
+    width: 90%;
+  }
+  .news_form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer_social {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .news_title {
+    max-width: 80%;
+  }
+}
+
+// For medium devices
+@media screen and (min-width: 767px) {
+  .navbar {
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    .nav-link {
+      position: relative;
+
+      &.active::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--title-color);
+        left: 50%;
+        bottom: -5px;
+        transform: translate(-50%, -50%);
+      }
+
+      &.active::before {
+        background-color: var(--first-color-alt);
+      }
+    }
+  }
+  .nav_icon,
+  .nav_toggle,
+  .nav_close {
+    display: none;
+  }
+}
+
+// For large devices
+@media screen and (min-width: 1024px) {
+}
+
+// For small devices
+@media screen and (max-width: 320px) {
+}
